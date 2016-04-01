@@ -3,10 +3,9 @@ package instruction;
 import data.Memory;
 
 public class Jump implements Instruction {
-    
-	
-	public Jump(int i){
-		
+
+	public Jump(int i) {
+
 	}
 
 	@Override
@@ -15,7 +14,4 @@ public class Jump implements Instruction {
 		return 0;
 	}
 
-	
-	}
-	
-	
+}

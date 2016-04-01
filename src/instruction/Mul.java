@@ -20,9 +20,7 @@ public class Mul extends Expression {
 	@Override
 	protected void operation(Data data1, Data data2, Data data3) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
-	
 
 }

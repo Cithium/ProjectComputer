@@ -3,13 +3,13 @@ package instruction;
 import data.Data;
 import data.Memory;
 
-public class Print implements Instruction{
-	
-	
+public class Print implements Instruction {
+
 	public Data data;
-	
-	public Print(Data d){
-			}
+
+	public Print(Data d) {
+		this.data = d;
+	}
 
 	@Override
 	public int execute(Memory m, int i) {

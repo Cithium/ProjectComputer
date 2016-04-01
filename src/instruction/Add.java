@@ -6,8 +6,8 @@ import data.Memory;
 
 public class Add extends Expression {
 
-	public Add(Data d, Data d2, Address a) {
-		super(d, d2, a);
+	public Add(Data d1, Data d2, Address a) {
+		super(d1, d2, a);
 		// TODO Auto-generated constructor stub
 	}
 

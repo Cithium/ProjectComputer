@@ -2,6 +2,7 @@ package instruction;
 
 import data.Address;
 import data.Data;
+import data.Memory;
 
 public class Copy implements Instruction  {
     
@@ -17,7 +18,9 @@ public class Copy implements Instruction  {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
 	
+
 	
 
 }

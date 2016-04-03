@@ -8,7 +8,7 @@ public class LongWord extends Word {
 		
 	}
 	
-	public Long getValue(){
+	private Long getValue(){
 		
 		return (Long) word;
 		

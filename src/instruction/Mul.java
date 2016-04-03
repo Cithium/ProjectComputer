@@ -18,7 +18,7 @@ public class Mul extends Expression {
 	}
 
 	@Override
-	protected void operation(Data data1, Data data2, Data data3) {
+	protected void operation(Data data1, Data data2, Address address1) {
 		
 
 	}

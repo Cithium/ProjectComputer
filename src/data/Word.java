@@ -14,6 +14,8 @@ public abstract class Word<T> implements Data {
     public abstract void mul(Word w1, Word w2);
     
     public abstract void add(Word w1, Word w2);
+    
+    public abstract boolean equals(Word w1);
    
 
    }

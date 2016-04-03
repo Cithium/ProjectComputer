@@ -32,4 +32,10 @@ public class LongWord extends Word {
 		
 	}
 
+	@Override
+	public boolean equals(Word w1) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

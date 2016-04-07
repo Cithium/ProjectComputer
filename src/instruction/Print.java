@@ -13,8 +13,8 @@ public class Print implements Instruction {
 
 	@Override
 	public int execute(Memory m, int i) {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("PRINT: " + data.getValue(m));
+		return ++i;
 	}
 
 }

@@ -17,9 +17,9 @@ public class Copy implements Instruction {
 
 	@Override
 	public int execute(Memory m, int i) {
-		// TODO Auto-generated method stub
+		m.insert(address.getIndex(), data.getValue(m));
 		
-		return 0;
+		return ++i;
 	}
 
 }

@@ -10,7 +10,7 @@ public class LongWord extends Word {
 	
 	public Long getValue(){
 		
-		return (long) word;
+		return (Long) word;
 		
 	}
 

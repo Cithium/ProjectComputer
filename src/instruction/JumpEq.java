@@ -5,22 +5,22 @@ import data.Memory;
 
 public class JumpEq implements Instruction {
 
-	private Data data1, data2;
+	private Data d1, d2;
 	private int jump;
 
-	public JumpEq(int i, Data d, Data d2) {
-		this.data1 = d;
-		this.data2 = d2;
+	public JumpEq(int i, Data d1, Data d2) {
+		this.d1 = d1;
+		this.d2 = d2;
 		this.jump = i;
 
 	}
 
 	@Override
-	public int execute(Memory m, int counter) {
-		if (data1.getValue(m).equals(m, data2.getValue(m))) {
-			counter = jump;
-			return counter;
+	public int execute(Memory m, int i) {
+		if (d1.getValue(m).equals(m, d2.getValue(m))) {
+			i = jump;
+			return i;
 		}
-		return ++counter;
+		return ++i;
 	}
 }

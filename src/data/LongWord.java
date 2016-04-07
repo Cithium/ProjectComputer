@@ -1,7 +1,7 @@
 package data;
 
 public class LongWord extends Word {
-	
+
 	
 	public LongWord(long word){
 		super(word);
@@ -16,8 +16,7 @@ public class LongWord extends Word {
 
 	@Override
 	public Word getValue(Memory m) {
-		// TODO Auto-generated method stub
-		return null;
+		return this;
 	}
 
 	@Override
@@ -33,9 +32,13 @@ public class LongWord extends Word {
 	}
 
 	@Override
-	public boolean equals(Word w1) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean equals(Memory m, Word w1) {
+		if (w1.getValue(m).equals(word)){
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 }
+

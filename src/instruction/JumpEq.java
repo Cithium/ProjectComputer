@@ -16,8 +16,11 @@ public class JumpEq implements Instruction {
 	}
 
 	@Override
-	public int execute(Memory m, int i) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int execute(Memory m, int counter) {
+		if (data1.getValue(m).equals(m, data2.getValue(m))) {
+			counter = jump;
+			return counter;
+		}
+		return ++counter;
 	}
 }

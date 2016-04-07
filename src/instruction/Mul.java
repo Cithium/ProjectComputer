@@ -18,8 +18,10 @@ public class Mul extends Expression {
 	}
 
 	@Override
+
 	protected void operation(Memory m, Data d1, Data d2, Address adress) {
 		address.getValue(m).mul(d1.getValue(m), d1.getValue(m));
+
 	}
 
 }

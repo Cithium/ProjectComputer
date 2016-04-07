@@ -1,3 +1,4 @@
+
 package data;
 
 public abstract class Word<T> implements Data {
@@ -15,7 +16,7 @@ public abstract class Word<T> implements Data {
     
     public abstract void add(Word w1, Word w2);
     
-    public abstract boolean equals(Word w1);
+    public abstract boolean equals(Memory m, Word w1);
    
 
    }

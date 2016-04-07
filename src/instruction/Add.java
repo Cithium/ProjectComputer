@@ -14,12 +14,13 @@ public class Add extends Expression {
 	@Override
 	public int execute(Memory m, int i) {
 		// TODO Auto-generated method stub
+		operation(m, data1, data2, address);
 		return 0;
 	}
 
 	@Override
-	protected void operation(Data data1, Data data2, Address address1) {
-		// TODO Auto-generated method stub
+	protected void operation(Memory m, Data data1, Data data2, Address address1) {
+		address1.getValue(m).add(data1.getValue(m), data2.getValue(m));
 		
 	}
 

@@ -12,7 +12,7 @@ public class Jump implements Instruction {
 
 	@Override
 	public int execute(Memory m, int i) {
-		// TODO Auto-generated method stub
+		
 		return jump;
 	}
 

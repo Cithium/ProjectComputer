@@ -1,8 +1,13 @@
 package program;
 
 
-import Instruction.Instruction;
+import instruction.Instruction;
 
 public class Program {
+	
+	public void TestAIDS() {
+		
+		System.out.println("AIDS");
+	}
 
 }

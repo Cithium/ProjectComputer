@@ -18,8 +18,7 @@ public class JumpEq implements Instruction {
 	@Override
 	public int execute(Memory m, int i) {
 		if (d1.getValue(m).equals(m, d2.getValue(m))) {
-			i = jump;
-			return i;
+			return jump;
 		}
 		return ++i;
 	}

@@ -22,7 +22,8 @@ public class Computer {
 	public void run(){
 		counter = 0;
 		while (counter != -1) {
-			program.get(counter).execute(memory, counter);
+			counter = program.get(counter).execute(memory, counter);
+			System.out.println(counter);
 		}
 	}
 }

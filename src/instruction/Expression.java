@@ -19,8 +19,7 @@ public abstract class Expression implements Instruction {
 	protected abstract void operation(Memory m, Data data1 , Data data2, Address adress1);
 	
 	public int execute(Memory m, int i){
-		return i;
-		
+		operation(m, d1, d2, address);
+		return ++i;		
 	}
-
 }

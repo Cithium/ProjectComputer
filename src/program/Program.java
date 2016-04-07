@@ -1,13 +1,10 @@
 package program;
 
 
+import java.util.ArrayList;
+
 import instruction.Instruction;
 
-public class Program {
+public class Program extends ArrayList<Instruction> {
 	
-	public void TestAIDS() {
-		
-		System.out.println("AIDS");
-	}
-
 }

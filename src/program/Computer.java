@@ -20,7 +20,9 @@ public class Computer {
 	}
 	
 	public void run(){
-		
-		
+		counter = 0;
+		while (counter != -1) {
+			program.get(counter).execute(memory, counter);
+		}
 	}
 }

@@ -4,7 +4,7 @@ public class LongMemory implements Memory {
 	
 	private Word[] memory;
 	
-	public LongMemory( int length){
+	public LongMemory(int length){
 		memory = new Word[length];
 		
 	}

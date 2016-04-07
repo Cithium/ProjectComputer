@@ -10,7 +10,7 @@ public class LongWord extends Word {
 	
 	private Long getValue(){
 		
-		return (Long) word;
+		return (long) word;
 		
 	}
 
@@ -27,7 +27,7 @@ public class LongWord extends Word {
 
 	@Override
 	public void add(Word w1, Word w2) {
-		// TODO Auto-generated method stub
+		word = ((LongWord) w1).getValue() + ((LongWord) w2).getValue();
 		
 	}
 

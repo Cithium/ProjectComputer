@@ -9,7 +9,6 @@ public abstract class Word<T> implements Data {
 		this.word = word;
 	}
 	
-	
 	public abstract Word getValue(Memory m);
 	
     public abstract void mul(Word w1, Word w2);

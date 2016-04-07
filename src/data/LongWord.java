@@ -8,7 +8,7 @@ public class LongWord extends Word {
 		
 	}
 	
-	private Long getValue(){
+	public Long getValue(){
 		
 		return (long) word;
 		
@@ -21,6 +21,7 @@ public class LongWord extends Word {
 
 	@Override
 	public void mul(Word w1, Word w2) {
+		word = ((LongWord) w1).getValue() * ((LongWord)w2).getValue();
 		
 		
 	}
@@ -28,7 +29,7 @@ public class LongWord extends Word {
 	@Override
 	public void add(Word w1, Word w2) {
 		word = ((LongWord) w1).getValue() + ((LongWord) w2).getValue();
-		
+
 	}
 
 	@Override

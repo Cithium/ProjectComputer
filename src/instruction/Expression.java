@@ -6,13 +6,13 @@ import data.Memory;
 
 public abstract class Expression implements Instruction {
 	
-	protected Data data1, data2;
+	protected Data d1, d2;
 	protected Address address;
 	
-	public Expression(Data d1, Data d2, Address a){
-		this.data1 = d1;
-		this.data2 = d2;
-		this.address = a;
+	public Expression(Data d1, Data d2, Address address){
+		this.d1 = d1;
+		this.d2 = d2;
+		this.address = address;
 		
 	}
 	

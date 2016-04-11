@@ -13,7 +13,7 @@ public class Print implements Instruction {
 
 	@Override
 	public int execute(Memory m, int i) {
-		System.out.println("PRINT: " + data.getValue(m));
+		System.out.println("PRINT: " + data.getValue(m).getValue());
 		return ++i;
 	}
 

@@ -41,8 +41,6 @@ public class LongWord extends Word<Long> {
             return false;
         }
 	}
-	
-	
 
 }
 

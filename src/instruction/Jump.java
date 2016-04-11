@@ -16,5 +16,10 @@ public class Jump implements Instruction {
 		
 		return jump;
 	}
+	
+	public String toString(){
+		
+		return "JMP " + jump;
+	}
 
 }

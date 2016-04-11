@@ -14,8 +14,12 @@ public class Print implements Instruction {
 
 	@Override
 	public int execute(Memory m, ProgramCounter counter) {
-		System.out.println("PRINT: " + data.getValue(m).getValue());
+		System.out.println("PRINT: " + data.getValue(m));
 		return counter.getCounter() + 1;
+	}
+	
+	public String toString(){
+		return "PRT" + data;
 	}
 
 }

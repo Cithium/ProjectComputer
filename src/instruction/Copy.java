@@ -23,4 +23,7 @@ public class Copy implements Instruction {
 		return counter.getCounter() + 1;
 	}
 
+	public String toString(){
+		return "CPY "+ data + " " + address;
+	}
 }

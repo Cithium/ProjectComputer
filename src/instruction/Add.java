@@ -1,8 +1,8 @@
 package instruction;
 
-import data.Address;
-import data.Data;
-import data.Memory;
+import data.*;
+
+
 import program.ProgramCounter;
 
 public class Add extends Expression {
@@ -22,13 +22,13 @@ public class Add extends Expression {
 
 	@Override
 
-	protected void operation(Memory m,Data d1, Data d2, Address address1) {
-		address.getValue(m).add(d1.getValue(m), d2.getValue(m));
+	protected void operation(Memory m ,Data data1, Data data2, Address address1) {
+		address.getValue(m).add(data1.getValue(m), data2.getValue(m));
 		
 	}
 	
 	public String toString(){
-		return "ADD " + data1 + " " + data2 + " "+ address;
+		return "ADD " + data1 + " " + ((LongWord)data2).getValue() + " "+ "[" + address.getIndex() + "]";
 	}
 
 }

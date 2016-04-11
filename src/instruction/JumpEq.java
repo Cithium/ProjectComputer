@@ -24,6 +24,6 @@ public class JumpEq implements Instruction {
 	}
 	
 	public String toString(){
-		return "JEQ "+ jump + " " + d1 + d2;
+		return "JEQ "+ jump + " " + d1 + ((LongWord)d2).getValue();
 	}
 }

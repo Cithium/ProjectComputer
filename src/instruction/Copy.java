@@ -3,6 +3,8 @@ package instruction;
 import data.Address;
 import data.Data;
 import data.Memory;
+import data.LongWord;
+import data.Word;
 import program.ProgramCounter;
 
 public class Copy implements Instruction {
@@ -24,6 +26,6 @@ public class Copy implements Instruction {
 	}
 
 	public String toString(){
-		return "CPY "+ data + " " + address;
+		return "CPY "+ ((Word)data).getValue() + " " + "[" + address.getIndex() + "]";
 	}
 }

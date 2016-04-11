@@ -24,14 +24,9 @@ public class Computer {
 		programCounter = new ProgramCounter();
 		int k = 0;
 		while (programCounter.getCounter() != -1) {
-			System.out.println(programCounter);
 			programCounter.setCounter(program.get
 					(programCounter.getCounter()).execute(memory, programCounter));
 			
-			
-			System.out.println("ADDRESS 0: " + memory.read(0).getValue());
-			if (k > 0) System.out.println("ADDRESS 1: " + memory.read(1).getValue());
-			k++;
 		}
 	}
 }

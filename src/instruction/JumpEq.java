@@ -1,7 +1,6 @@
 package instruction;
 
-import data.Data;
-import data.Memory;
+import data.*;
 
 public class JumpEq implements Instruction {
 

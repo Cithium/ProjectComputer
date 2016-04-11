@@ -1,6 +1,6 @@
 package data;
 
-public class LongWord extends Word {
+public class LongWord extends Word<Long> {
 
 	
 	public LongWord(long word){
@@ -8,9 +8,10 @@ public class LongWord extends Word {
 		
 	}
 	
+	
 	public Long getValue(){
 		
-		return (Long) word;
+		return word;
 		
 	}
 
@@ -34,12 +35,14 @@ public class LongWord extends Word {
 
 	@Override
 	public boolean equals(Memory m, Word w1) {
-		if (w1.getValue(m).equals(word)){
-			return true;
-		}else{
-			return false;
-		}
+        if (((LongWord) w1).getValue() == word) {
+            return true;
+        } else {
+            return false;
+        }
 	}
+	
+	
 
 }
 

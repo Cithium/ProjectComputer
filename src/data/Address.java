@@ -15,8 +15,7 @@ public class Address implements Data {
 	
 	@Override
 	public Word getValue(Memory m) {
-		// TODO Auto-generated method stub
-		return null;
+		return m.read(index);
 	}
 
 }

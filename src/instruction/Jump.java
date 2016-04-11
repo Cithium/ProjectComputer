@@ -1,6 +1,7 @@
 package instruction;
 
 import data.Memory;
+import program.ProgramCounter;
 
 public class Jump implements Instruction {
    private int jump;
@@ -11,7 +12,7 @@ public class Jump implements Instruction {
 	}
 
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 		
 		return jump;
 	}

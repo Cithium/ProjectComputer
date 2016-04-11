@@ -3,6 +3,7 @@ package instruction;
 import data.Address;
 import data.Data;
 import data.Memory;
+import program.ProgramCounter;
 
 public class Add extends Expression {
     
@@ -11,14 +12,14 @@ public class Add extends Expression {
 		super(d1, d2, address);
 		// TODO Auto-generated constructor stub
 	}
-/*
+
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 
 		operation(m, d1, d2, address);
-		return ++i;
+		return counter.getCounter() + 1;
 	}
-*/
+
 	@Override
 
 	protected void operation(Memory m,Data d1, Data d2, Address address1) {

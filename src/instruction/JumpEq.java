@@ -1,6 +1,7 @@
 package instruction;
 
 import data.*;
+import program.ProgramCounter;
 
 public class JumpEq implements Instruction {
 
@@ -15,10 +16,10 @@ public class JumpEq implements Instruction {
 	}
 
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 		if (d1.getValue(m).equals(m, d2.getValue(m))) {
 			return jump;
 		}
-		return ++i;
+		return counter.getCounter() + 1;
 	}
 }

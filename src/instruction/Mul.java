@@ -3,6 +3,7 @@ package instruction;
 import data.Address;
 import data.Data;
 import data.Memory;
+import program.ProgramCounter;
 
 public class Mul extends Expression {
 
@@ -12,9 +13,9 @@ public class Mul extends Expression {
 	}
 
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 		operation(m,d1,d2,address);
-		return ++i;
+		return counter.getCounter() + 1;
 	}
 
 	@Override

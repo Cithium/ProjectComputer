@@ -1,11 +1,12 @@
 package instruction;
 
 import data.Memory;
+import program.*;
 
 public class Halt implements Instruction {
 
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 		
 		return -1;
 	}

@@ -3,6 +3,7 @@ package instruction;
 import data.Address;
 import data.Data;
 import data.Memory;
+import program.ProgramCounter;
 
 public class Copy implements Instruction {
 
@@ -16,10 +17,10 @@ public class Copy implements Instruction {
 	}
 
 	@Override
-	public int execute(Memory m, int i) {
+	public int execute(Memory m, ProgramCounter counter) {
 		m.insert(address.getIndex(), data.getValue(m));
 		
-		return ++i;
+		return counter.getCounter() + 1;
 	}
 
 }

@@ -1,8 +1,6 @@
 package instruction;
 
 import data.*;
-
-
 import program.ProgramCounter;
 
 public class Add extends Expression {
@@ -28,7 +26,7 @@ public class Add extends Expression {
 	}
 	
 	public String toString(){
-		return "ADD " + data1 + " " + ((LongWord)data2).getValue() + " "+ "[" + address.getIndex() + "]";
+		return "ADD " + "[" + ((Address)data1).getIndex() + "]" + " " + " " + ((LongWord)data2).getValue() + " "+ "[" + address.getIndex() + "]";
 	}
 
 }

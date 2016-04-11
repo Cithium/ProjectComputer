@@ -1,5 +1,6 @@
 package instruction;
 
+import data.Address;
 import data.Data;
 import data.Memory;
 import program.ProgramCounter;
@@ -19,7 +20,7 @@ public class Print implements Instruction {
 	}
 	
 	public String toString(){
-		return "PRT" + data;
+		return "PRT" + "[" + ((Address)data).getIndex() + "]";
 	}
 
 }

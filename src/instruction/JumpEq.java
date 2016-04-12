@@ -22,4 +22,8 @@ public class JumpEq implements Instruction {
 		}
 		return counter.getCounter() + 1;
 	}
+	
+	public String toString(){
+		return "JEQ "+ jump + " " + "[" + ((Address)d1).getIndex() + "]" + " " + ((LongWord)d2).getValue();
+	}
 }

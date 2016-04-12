@@ -1,8 +1,6 @@
 package instruction;
 
-import data.Address;
-import data.Data;
-import data.Memory;
+import data.*;
 import program.ProgramCounter;
 
 public class Copy implements Instruction {
@@ -23,4 +21,7 @@ public class Copy implements Instruction {
 		return counter.getCounter() + 1;
 	}
 
+	public String toString(){
+		return "CPY "+ ((Word)data).getValue() + " " + "[" + address.getIndex() + "]";
+	}
 }

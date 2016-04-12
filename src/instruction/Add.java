@@ -3,6 +3,7 @@ package instruction;
 import data.Address;
 import data.Data;
 import data.Memory;
+import data.Word;
 import program.ProgramCounter;
 
 public class Add extends Expression {
@@ -25,6 +26,10 @@ public class Add extends Expression {
 	protected void operation(Memory m,Data d1, Data d2, Address address1) {
 		address.getValue(m).add(d1.getValue(m), d2.getValue(m));
 		
+	}
+	
+	public String toString(){
+		return "ADD "+ ((Address)d1).getIndex() + " " + ((Word)d2).getValue() + "[" + address.getIndex() + "]";
 	}
 
 }

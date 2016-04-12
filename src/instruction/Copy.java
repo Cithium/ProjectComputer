@@ -23,6 +23,6 @@ public class Copy implements Instruction {
 	}
 
 	public String toString(){
-		return "CPY "+ ((Word)data).getValue() + " " + "[" + address.getIndex() + "]";
+		return "CPY "+ data.toString() + " " + address.toString();
 	}
 }

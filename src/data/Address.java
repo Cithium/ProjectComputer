@@ -17,4 +17,8 @@ public class Address implements Data {
 	public Word getValue(Memory m) {
 		return m.read(index);
 	}
+	
+	public String toString() {
+		return "[" + index + "]";
+	}
 }

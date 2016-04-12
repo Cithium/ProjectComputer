@@ -28,7 +28,7 @@ public class Add extends Expression {
 	
 	public String toString(){
 
-		return "ADD " + "[" + ((Address)data1).getIndex() + "]" + " " + " " + ((LongWord)data2).getValue() + " "+ "[" + address.getIndex() + "]";
+		return "ADD " + data1.toString() + " " + data2.toString() + " "+ address.toString();
 
 	}
 

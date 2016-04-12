@@ -20,7 +20,7 @@ public class Print implements Instruction {
 	}
 	
 	public String toString(){
-		return "PRT" + "[" + ((Address)data).getIndex() + "]";
+		return "PRT " + data.toString();
 	}
 
 }

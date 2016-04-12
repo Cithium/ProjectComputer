@@ -26,10 +26,7 @@ public class Mul extends Expression {
 	}
 	
 	public String toString(){
-		return "MUL" + " ["
-	     + ((Address)data1).getIndex() + "]" + " " 
-	     + "[" + ((Address)data2).getIndex() + "]" + " " 
-		 + "[" + ((Address)address).getIndex() + "]";
+		return "MUL " + data1.toString() + " " + data2.toString() + " " + address.toString();
 	}
 
 }

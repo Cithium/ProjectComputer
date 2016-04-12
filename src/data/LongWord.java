@@ -46,6 +46,10 @@ public class LongWord extends Word<Long> {
             return false;
         }
 	}
+	
+	public String toString() {
+		return word.toString();
+	}
 
 }
 

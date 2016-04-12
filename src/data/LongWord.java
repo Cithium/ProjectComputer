@@ -22,13 +22,8 @@ public class LongWord extends Word<Long> {
 
 	@Override
 	public void mul(Word w1, Word w2) {
-		System.out.println("// MUL //");
-		System.out.println(((LongWord) w1).getValue());
-		System.out.println(((LongWord) w2).getValue());
-		System.out.println(word);
-
 		word =  ((LongWord) w1).getValue() * ((LongWord)w2).getValue();
-		System.out.println("\\ MUL \\");
+		
 		
 	}
 
